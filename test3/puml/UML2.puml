@@ -1,0 +1,9 @@
+@startuml
+object ResKind
+ResKind : resName = "classic movie"
+ResKind : ISBN = 1613480020
+ResKind : price=50.0
+ResKind : BrifeIntro="about classic movie"
+ResKind : num=20
+ResKind : availbale=10
+@enduml

@@ -1,0 +1,150 @@
+@startuml
+
+
+
+class OPAC
+{
+   -ArrayList<ResKind> resKind
+ {method} +ResKind[] setResKind(ArrayList<ResKind>  res)
+{method} +ResKind[] getResKind(ArrayList<ResKind> res)
+}
+
+class ResKind{
+-resName
+-ISBN
+-price
+-BrifeIntro
+-num
+-availbale
+{method} +void setResName()
+{method} +void getResName()
+{method} +void setISBN()
+{method} +void getISBN()
+{method} +void setPrice()
+{method} +void getPrice()
+{method} +void setBrifeIntro()
+{method} +void getBrifeIntro()
+{method} +void setNum()
+{method} +void getNum()
+{method} +void setAvailbale()
+{method} +void getAvailbale()
+
+}
+OPAC "1" -- "1..*" ResKind
+
+
+class ReserveRecord{
+-reserveDate
+{method} +void setReserveDate()
+{method} +void getReserveDate()
+}
+ResKind "1" -- "*" ReserveRecord:hasReserved
+
+
+class Reader{
+-userName
+-idCard
+-borrowNum
+-bookMax
+-bookBorrow
+-discMax
+-discBorrow
+{method} +void setUserName()
+{method} +void getUserName()
+{method} +void setIdCard()
+{method} +void getIdCard()
+{method} +void setBorrowNum()
+{method} +void getBorrowNum()
+{method} +void setBookMax()
+{method} +void getBookMax()
+{method} +void setBookBorrow()
+{method} +void getBookBorrow()
+{method} +void setDiscMax()
+{method} +void getDiscMax()
+{method} +void setDiscBorrow()
+{method} +void getDiscBorrow()
+
+}
+
+ReserveRecord "*" -- "1" Reader
+
+class BorrowRecord{
+-borrowDate
+-backDate
+{method} +void setBorrowDate()
+{method} +void getBorrowDate()
+{method} +void setBackDate()
+{method} +void getBackDate()
+}
+Reader -- BorrowRecord
+
+
+class ResOpt{
+-saveNum
+-status
+{method} +void setSaveNum()
+{method} +void getSaveNum()
+{method} +void setStatus()
+{method} +void getStatus()
+}
+BorrowRecord "0..1" --"1"ResOpt
+
+ResOpt "*" --* "1" ResKind :possess
+
+
+class DiscKind{
+-disctype
+-discnum
+-madeCompany
+{method} +void setDisctype()
+{method} +void getDisctype()
+{method} +void setDiscnum()
+{method} +void getDiscnum()
+{method} +void setMadeCompany()
+{method} +void getMadeCompany()
+
+}
+
+
+class BookKind{
+-author
+-press
+-pubDate
+{method} +void setAuthor()
+{method} +void getAuthor()
+{method} +void setPress()
+{method} +void getPress()
+{method} +void setPubDate()
+{method} +void getPubDate()
+}
+DiscKind --^ ResKind
+BookKind  --^ ResKind
+
+
+class BookManager{
+-employeeId
+-employeeName
+{method} +void setEmployeeId()
+{method} +void getEmployeeId()
+{method} +void setEmployeeName()
+{method} +void getEmployeeName()
+}
+BookManager  "1" -- "*" BorrowRecord:register
+
+
+class OverdueRec{
+-overdueDays
+{method} +void setOverdueDays()
+{method} +void getOverdueDays()
+}
+OverdueRec "0..1" -- "1" BorrowRecord
+
+
+class FineDetails{
+-fineNum
+{method} +void setFineNum()
+{method} +void getFineNum()
+
+}
+FineDetails "0..1" -- "*" OverdueRec
+@enduml

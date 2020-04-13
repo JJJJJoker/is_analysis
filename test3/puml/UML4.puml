@@ -1,0 +1,10 @@
+@startuml
+object Reader
+Reader : userName="xrf"
+Reader : idCard="0123"
+Reader : borrowNum=2017
+Reader : bookMax=40
+Reader : bookBorrow=20
+Reader : discMax=20
+Reader : discBorrow=10
+@enduml

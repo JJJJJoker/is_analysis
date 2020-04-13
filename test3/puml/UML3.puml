@@ -1,0 +1,4 @@
+@startuml
+object ReserveRecord
+ReserveRecord : reserveDate = "2020-04-5"
+@enduml

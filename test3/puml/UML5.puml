@@ -1,0 +1,5 @@
+@startuml
+object BorrowRecord
+BorrowRecord : borrowDate="2020-04-5"
+BorrowRecord : backDate="2020-05-5"
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+object DiscKind
+DiscKind : disctype="DVD"
+DiscKind : discnum="66"
+DiscKind : madeCompany="xiongmao"
+@enduml
