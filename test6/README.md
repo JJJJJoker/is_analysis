@@ -216,7 +216,7 @@
 
 #### 2. 业务流程（顺序图） [源码](./src/sequence评定成绩.puml)
 
-![sequence1](C:/Users/baymaxxu/Desktop/test6/sequence评定成绩.png) 
+![sequence1](./sequence评定成绩.png) 
 
 
 #### 3. 界面设计
