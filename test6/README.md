@@ -173,12 +173,12 @@
 | 主事件流   |                                              |
 | 备选事件流 |                                              |
 
-#### 2. 业务流程（顺序图） [源码](../src/sequence学生列表.puml)
+#### 2. 业务流程（顺序图） [源码](./src/sequence学生列表.puml)
 
 #### 3. 界面设计
 
 - API接口调用
-  - 接口1：[getStudents](../接口/getStudents.md) 
+  - 接口1：[getStudents](./接口/getStudents.md) 
 
 #### 4. 算法描述
 
@@ -193,12 +193,12 @@
 
 #### 5. 参照表
 
-- [STUDENTS](../数据库设计.md/#STUDENTS)
-- [CGRADES](../数据库设计.md/#CGRADES)
-- [TESTS](../数据库设计.md/#TESTS)
-- [COURSE](../数据库设计.md/#COURSE)
-- [EXGRADES](../数据库设计.md/#EXGRADES)
-- [ITEMOFSCORE](../数据库设计.md/#ITEMOFSCORE)
+- [STUDENTS](./数据库设计.md/#STUDENTS)
+- [CGRADES](./数据库设计.md/#CGRADES)
+- [TESTS](./数据库设计.md/#TESTS)
+- [COURSE](./数据库设计.md/#COURSE)
+- [EXGRADES](./数据库设计.md/#EXGRADES)
+- [ITEMOFSCORE](./数据库设计.md/#ITEMOFSCORE)
 
 ### “评定成绩”用例 
 
@@ -214,41 +214,39 @@
 | 备选事件流 | 2a. 成绩必须是0至100之间，可以为空，但不能超界 <br/>&nbsp;&nbsp; 1.提示用户重新输入成绩分数 |
 
 
-#### 2. 业务流程（顺序图） [源码](../src/sequence评定成绩.puml)
+#### 2. 业务流程（顺序图） [源码](./src/sequence评定成绩.puml)
 
 ![sequence1](C:/Users/baymaxxu/Desktop/test6/sequence评定成绩.png) 
 
 
 #### 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/评定成绩.html
+- 界面参照: ./评定成绩.html
 
 - API接口调用
 
-  - 接口1：[getNextPrevStudent](../接口/getNextPrevStudent.md)
+  - 接口1：[getNextPrevStudent](./接口/getNextPrevStudent.md)
 
     用于取得上一个或者下一个学生的学号
 
-  - 接口2：[getOneStudentResults](../接口/getOneStudentResults.md)
+  - 接口2：[getOneStudentResults](./接口/getOneStudentResults.md)
 
     用于显示一个学生的所有实验成绩和评语
 
-  - 接口3：[setOneStudentResults](../接口/setOneStudentResults.md)
+  - 接口3：[setOneStudentResults](./接口/setOneStudentResults.md)
 
     用于设置一个学生的部分实验成绩和评语
-
-#### 4. 算法描述
 
     无
 
 #### 5. 参照表
 
-- [TEACHER](../数据库设计.md/#TEACHER)
-- [GRADES](../数据库设计.md/#GRADES)
-- [TESTS](../数据库设计.md/#TESTS)
-- [COURSE](../数据库设计.md/#COURSE)
-- [EXGRADES](../数据库设计.md/#EXGRADES)
-- [ITEMOFSCORE](../数据库设计.md/#ITEMOFSCORE)
+- [TEACHER](./数据库设计.md/#TEACHER)
+- [GRADES](./数据库设计.md/#GRADES)
+- [TESTS](./数据库设计.md/#TESTS)
+- [COURSE](./数据库设计.md/#COURSE)
+- [EXGRADES](./数据库设计.md/#EXGRADES)
+- [ITEMOFSCORE](./数据库设计.md/#ITEMOFSCORE)
 
 ### “查看成绩”用例 
 
@@ -263,15 +261,14 @@
 | 主事件流   |                                                |
 | 备选事件流 |                                                |
 
-#### 2. 业务流程（顺序图） [源码](../src/sequence查看成绩.puml)
+#### 2. 业务流程（顺序图） [源码](./src/sequence查看成绩.puml)
 
-![sequence1](C:/Users/baymaxxu/Desktop/test6/sequence查看成绩.png) 
+![sequence1](./sequence查看成绩.png) 
 
 #### 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/查看成绩.html
 - API接口调用
-  - 接口1：[getOneStudentResults](../接口/getOneStudentResults.md) 
+  - 接口1：[getOneStudentResults](./接口/getOneStudentResults.md) 
 
 #### 4. 算法描述
 
@@ -279,12 +276,12 @@
 
 #### 5. 参照表
 
-- [STUDENTS](../数据库设计.md/#STUDENTS)
-- [GRADES](../数据库设计.md/#GRADES)
-- [TESTS](../数据库设计.md/#TESTS)
-- [COURSE](../数据库设计.md/#COURSE)
-- [EXGRADES](../数据库设计.md/#EXGRADES)
-- [ITEMOFSCORE](../数据库设计.md/#ITEMOFSCORE)
+- [STUDENTS](./数据库设计.md/#STUDENTS)
+- [GRADES](./数据库设计.md/#GRADES)
+- [TESTS](./数据库设计.md/#TESTS)
+- [COURSE](./数据库设计.md/#COURSE)
+- [EXGRADES](./数据库设计.md/#EXGRADES)
+- [ITEMOFSCORE](./数据库设计.md/#ITEMOFSCORE)
 
 
 
@@ -307,20 +304,19 @@
 
 ## 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/顶部菜单.html
 - API接口调用
-  - 接口1：[setPassword](../接口/setPassword.md)
+  - 接口1：[setPassword](./接口/setPassword.md)
 
-#### 4. 算法描述 [源码](../src/登录认证流程图.puml)
+#### 4. 算法描述 [源码](./src/登录认证流程图.puml)
 
-![登录认证流程图](C:/Users/baymaxxu/Desktop/test6/登录认证流程图.png)
+![登录认证流程图](./登录认证流程图.png)
     
 
 #### 5. 参照表
 
 users
 
-- [USERS](../数据库设计.md/#USERS)
+- [USERS](./数据库设计.md/#USERS)
 
 
 
@@ -343,10 +339,9 @@ users
 
 #### 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/顶部菜单.html
 - API接口调用
-  - 接口1：[getUserInfo](../接口/getUserInfo.md)
-  - 接口2：[setUserInfo](../接口/setUserInfo.md)
+  - 接口1：[getUserInfo](./接口/getUserInfo.md)
+  - 接口2：[setUserInfo](./接口/setUserInfo.md)
 
 #### 4. 算法描述
 
@@ -355,7 +350,7 @@ users
 
 #### 5. 参照表
 
-- [USERS](../数据库设计.md/#USERS)
+- [USERS](./数据库设计.md/#USERS)
 
 
 
@@ -378,9 +373,8 @@ users
 
 #### 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/顶部菜单.html
 - API接口调用
-  - 接口1：[getUserInfo](../接口/getUserInfo.md)
+  - 接口1：[getUserInfo](./接口/getUserInfo.md)
 
 #### 4. 算法描述
 
@@ -389,9 +383,9 @@ users
 
 #### 5. 参照表
 
-- [STUDENTS](../数据库设计.md/#STUDENTS)
-- [TEACHERS](../数据库设计.md/#TEACHERS)
-- [USERS](../数据库设计.md/#USERS)
+- [STUDENTS](./数据库设计.md/#STUDENTS)
+- [TEACHERS](./数据库设计.md/#TEACHERS)
+- [USERS](./数据库设计.md/#USERS)
 
 ### “登出”用例 
 
@@ -412,15 +406,15 @@ users
 
 #### 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/顶部菜单.html
+
 - API接口调用
-  - 接口1：[logout](../接口/logout.md)
+  - 接口1：[logout](./接口/logout.md)
 
 #### 4. 算法描述
 
 #### 5. 参照表
 
-- [USERS](../数据库设计.md/#USERS)
+- [USERS](./数据库设计.md/#USERS)
 
 
 
@@ -443,15 +437,14 @@ users
 
 #### 3. 界面设计
 
-- 界面参照: https://miss-pwj.github.io/is_analysis/test6/ui/登录.html
 - API接口调用
-  - 接口1：[login](../接口/login.md)
+  - 接口1：[login](./接口/login.md)
 
-#### 4. 算法描述 [源码](../src/登录认证流程图.puml)
+#### 4. 算法描述 [源码](./src/登录认证流程图.puml)
 
-![登录认证流程图](C:/Users/baymaxxu/Desktop/test6/登录认证流程图.png)
+![登录认证流程图](./登录认证流程图.png)
     
 
 #### 5. 参照表
 
-- [USERS](../数据库设计.md/#USERS)
+- [USERS](./数据库设计.md/#USERS)
