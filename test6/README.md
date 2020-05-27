@@ -175,11 +175,8 @@
 
 #### 2. 业务流程（顺序图） [源码](../src/sequence学生列表.puml)
 
-![sequence1](C:/Users/baymaxxu/Desktop/test6/sequence学生列表.png) 
-
 #### 3. 界面设计
 
-- 界面参照: https://miss-pw.github.io/is_analysis/test6/ui/index.html
 - API接口调用
   - 接口1：[getStudents](../接口/getStudents.md) 
 
